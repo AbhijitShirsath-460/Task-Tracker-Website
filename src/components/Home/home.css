@@ -1,0 +1,1280 @@
+* {
+    /* box-sizing: border-box; */
+    /* margin: 0px;
+    padding: 0px; */
+}
+
+
+body {
+    /* background: radial-gradient(circle, rgba(174, 238, 230, 1) 14%, rgba(148, 187, 233, 1) 100%); */
+    background: linear-gradient(90deg, #99b9e8 0%, #e8c898 100%);
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.home-container {
+
+    /* border: 2px solid white; */
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+
+
+    /* margin-left: 10px;
+     margin-right : 20px; */
+
+}
+
+
+/* .sidebar {
+
+    border: 2px solid white;
+    padding: 2px;
+    margin: 10px;
+    width: 13rem;
+    height: 37rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+} */
+
+
+
+/* .profile-container {
+
+    background: #000;
+    height: 5rem;
+    margin: 5px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.profileImage {
+
+    width: 40%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.profileImageName {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    font-style: initial;
+
+} */
+
+
+/* .tasks {
+
+
+    height: 30rem;
+    margin: 5px;
+    color: white;
+    display: block;
+
+}
+
+.task-list-container {
+    margin-top: 1.5rem;
+    height: 3.5rem;
+    border: 2px solid white;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.task-list {
+
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+} */
+
+.task-container {
+
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+    border-radius: 8px;
+    padding: 0.8rem;
+
+}
+
+.task-container-items {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* .task-container-logo{
+
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    
+} */
+
+.task-container-logo-name {
+
+    color: white;
+    font-weight: 500;
+    display: flex;
+    margin: 10px;
+    font-size: 2rem;
+}
+
+.first-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid white;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+
+
+
+}
+
+
+.filter-container {
+
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    align-items: center;
+    /* justify-content: space-between; */
+
+
+}
+
+.lbl {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.lbl-name {
+
+    color: white;
+    font-weight: 500;
+    margin: 10px;
+    font-size: 1.3rem;
+
+}
+
+.filter-input {
+
+    padding: 0.8rem;
+    color: #000;
+    font-weight: 600;
+    border-radius: 8px;
+    outline: none;
+
+
+}
+
+
+/* .prority-container {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.optionlist-container {
+
+    padding: 0.3rem;
+    outline: none;
+    width: 10rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+
+} */
+
+
+
+.date-container {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.date-input {
+
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    outline: 0.5px solid black;
+
+}
+
+
+
+.task-added-container {
+    display: flex;
+    margin-left: 19rem;
+    /* border: 2px solid white;  */
+    width: 100%;
+    justify-content: end;
+
+
+
+
+}
+
+.task-added-logo-btn-container {
+
+    border: 2px solid white;
+    width: 100%;
+
+
+
+
+}
+
+.task-added-logo {
+
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+
+}
+
+
+
+.completed-task-button {
+
+    display: flex;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 6px;
+    gap: 1rem;
+    align-items: center;
+
+    width: 100% auto;
+
+}
+
+.all-task-btn{
+
+    display: flex;
+    padding: 0.8rem 0.8rem;
+    width: 10rem;
+    justify-content: center;
+
+    font-size: 15px;
+    font-weight: 540;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #99b9e8 0%, #e8c898 100%);
+    transition: 0.2s;
+
+
+}
+
+.completed-task-btn {
+
+    display: flex;
+    padding: 0.8rem 0.8rem;
+    width: 12rem;
+    justify-content: center;
+
+    font-size: 15px;
+    font-weight: 540;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #99b9e8 0%, #e8c898 100%);
+    transition: 0.2s;
+
+
+}
+
+/* .completed-task-button .completed-task-btn{
+
+    padding: 0.5rem 0.5rem;
+    width: 8rem;  
+    font-size: 15px;
+    font-weight:540 ;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #99b9e8 0%, #e8c898 100%);
+    transition: 0.2s;
+} */
+
+.completed-task-btn:hover {
+    background: none;
+    color: white;
+
+}
+
+.all-task-btn:hover {
+    background: none;
+    color: white;
+
+
+}
+
+
+
+
+/* .addedTask-container{
+
+    margin-left: 50rem;
+
+}  */
+
+.created-task-form-container {
+    border-radius: 10px;
+    border: none;
+
+
+}
+
+.form {
+
+    background: linear-gradient(90deg, #99b9e8 0%, #e8c898 100%);
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+
+
+}
+
+.heading {
+
+    color: white;
+}
+
+.form .form-element {
+
+    margin-top: 1.3rem;
+    display: flex;
+    padding: 0.5rem 2rem;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-elements-label{
+ 
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+/* .form .form-element label {
+
+    
+} */
+
+.created-task-input {
+
+    padding: 0.5rem;
+    width: 12rem;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    outline: none;
+
+
+}
+
+#task-description {
+
+    width: 11rem;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
+.task-submit-button {
+
+    padding: 0.5rem 0.5rem;
+    width: 8rem;
+    font-size: 15px;
+    font-weight: 540;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #99b9e8 0%, #e8c898 100%);
+
+
+}
+
+.close-btn {
+    padding: 0.5rem 0.5rem;
+    width: 8rem;
+    font-size: 15px;
+    font-weight: 540;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #99b9e8 0%, #e8c898 100%);
+
+}
+
+.close-btn:hover {
+    background: none;
+    color: white;
+
+}
+
+.task-submit-button:hover {
+    background: none;
+    color: white;
+}
+
+
+/* edit this  */
+.Added-task-container {
+
+    border: 2px solid white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    /* height: 68vh; */
+    justify-content: center;
+
+
+
+}
+
+
+
+.task-list-items {
+
+    border: 2px solid white;
+    border-radius: 8px;
+    /* background: linear-gradient(90deg, #99b9e8 0%, #e8c898 100%); */
+
+    background: #414040;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 5px rgb(43, 42, 42);
+
+}
+
+
+.task-list-items h3 {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
+
+.task-list-items p {
+    font-size: 15px;
+    color: white;
+    margin-top: 0;
+}
+
+.icons-container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+
+.icon {
+
+    font-size: 35px;
+    cursor: pointer;
+
+}
+
+.icon:hover {
+    color: red;
+}
+
+.check-icon {
+
+    font-size: 25px;
+    margin-left: 10px;
+    color: white;
+}
+
+.check-icon:hover {
+    color: green
+}
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+
+
+    .home-container{
+    
+         width: 100%; 
+         display: flex;
+
+    }
+    .task-container{
+
+        width: 100%;
+        height: 100%;
+     
+         display: flex;
+         
+    }
+    .task-container-items{
+        display: flex;
+        height: 100%;
+        width: 100%;
+
+    }
+    .task-container-logo-name{
+
+        font-size: 2.5rem;
+        text-align: center;
+        
+    }
+
+    .first-nav{
+
+         width: 100%;
+         height: 100%;
+         display: flex;
+         flex-direction: row;
+    
+         
+    }  
+
+    .filter-container{
+
+        padding: 1rem;
+        display: flex;
+        width: 100%;
+        margin: 0px;
+        
+    }
+    .lbl-name{
+        font-size: 1.5rem;
+
+
+    }
+    .filter-input{
+   
+         padding: 0.9rem;
+         border-radius: 10px;
+         width: 13rem;
+         font-size:18px;
+
+    }
+    .date-container{
+
+        padding: 1rem;
+        display: flex;
+        width: 100%;
+        margin: 0px;
+
+    }
+    .date-input{
+ 
+        padding: 0.9rem;
+        border-radius: 10px;
+        width: 13rem;
+        font-size:18px;
+
+    }
+
+    .task-added-container{
+     
+         margin-left: 0px;
+
+    }
+
+    /* .created-task-form-container{
+
+       
+                
+    } */
+    .modal-action{
+
+       /* width: 40rem;    
+       height: 40rem; */
+    }
+
+    .form{
+        display: flex;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+
+    .form-element{
+    
+         display: flex;
+         justify-content: center;
+    
+        padding: 3rem;
+    }
+    .form-elements-label{
+        font-size: 1.5rem;
+
+
+    }
+     #task-name{
+
+        padding: 1rem;
+        border-radius: 8px;
+        font-size: 1rem;
+      
+     }
+     #task-description{
+
+        padding: 1rem;
+        border-radius: 8px;
+        font-size: 1.2rem;
+     }
+
+     .created-task-input{
+
+        padding: 1rem;
+        border-radius: 8px;
+        font-size: 1rem;
+
+     }
+
+     .task-submit-button{
+   
+         margin: 1rem;
+         font-size: 1.5rem;
+         width: 12rem;
+     }
+
+      .close-btn{
+        margin: 1rem;
+         font-size: 1.5rem;
+         width: 12rem;
+      }
+
+      .completed-task-button{
+
+       padding: 0.8rem; 
+       margin-bottom: 1rem;
+       display: flex;
+       
+       
+      }
+
+      .all-task-btn{
+
+    
+         font-size: 1.5rem;
+         width: 12rem;
+
+      }
+      .completed-task-btn{
+
+        
+         font-size: 1.5rem;
+         width: 12rem;
+
+
+      }
+
+    
+    .Added-task-container{
+
+        padding: 0.5rem 0rem;
+        display: flex;
+        width: 100%;
+        margin-right: 10rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .task-list-items{ 
+
+        display: flex;
+        align-items: center;
+        /* padding-bottom:3rem ; */
+        
+
+
+    }
+
+    
+
+    .task-list-items-details h3{
+
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+
+
+
+    }
+
+    .task-list-items-details p{
+
+
+    }
+
+    .icons-container{
+
+    }
+    
+    
+
+
+}
+
+/* Set the width of the container to 100% on screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .home-container {
+      width: 100%;
+    }
+    .task-container {
+      width: 100%;
+    }
+    .task-container-items {
+      width: 100%;
+    }
+    .task-container-logo-name {
+      font-size: 2.5rem;
+    }
+    .first-nav {
+      width: 100%;
+    }
+    .filter-container {
+      padding: 1rem;
+      width: 100%;
+    }
+    .lbl-name {
+      font-size: 1.5rem;
+    }
+    .filter-input {
+      width: 13rem;
+      font-size: 18px;
+      width: 9rem;
+      padding: 0.7rem;
+      
+    }
+    .date-container {
+      padding: 1rem;
+      width: 100%;
+    }
+    .date-input {
+      width: 13rem;
+      font-size: 18px;
+      width: 9rem;
+      padding: 0.7rem;
+    }
+    .task-added-container {
+      margin-left: 0px;
+    }
+    .modal-action {
+      width: 40rem;
+      height: 40rem;
+    }
+    .form {
+      display: flex;
+    }
+    .heading {
+      font-size: 2rem;
+    }
+    .form-element {
+      display: flex;
+      justify-content: center;
+      padding: 3rem;
+    }
+    .form-elements-label {
+      font-size: 1.5rem;
+    }
+    #task-name {
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    #task-description {
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 1.2rem;
+    }
+    .created-task-input {
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .task-submit-button {
+      margin: 1rem;
+      font-size: 1.5rem;
+      width: 12rem;
+    }
+    .close-btn {
+      margin: 1rem;
+      font-size: 1.5rem;
+      width: 12rem;
+    }
+    .completed-task-button {
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      display: flex;
+    }
+    .all-task-btn {
+      font-size: 1.5rem;
+      width: 12rem;
+    }
+    .completed-task-btn {
+      font-size: 1.5rem;
+      width: 12rem;
+    }
+    .Added-task-container {
+      padding: 0.5rem 0rem;
+      display: flex;
+      width: 100%;
+      margin-right: 10rem;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .task-list-items {
+      display: flex;
+      align-items: center;
+    }
+    .task-list-items-details h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border: 2px solid white;
+    }
+    .task-list-items-details p {
+      font-size: 1.2rem;
+    }
+    .icons-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+
+@media screen and (max-width: 576px) {
+
+
+  .home-container {
+      flex-direction: column;
+      margin: 0;
+  }
+
+  .task-container {
+      width: 100%;
+  }
+
+  .task-container-items {
+      width: 100%;
+  }
+
+  .task-container-logo-name {
+      font-size: 1.5rem;
+  }
+
+  .first-nav {
+      width: 95%;
+      padding: 0 1rem;
+  }
+
+  .filter-container {
+      padding: 0.5rem;
+      width: 100%;
+  }
+
+  .lbl-name {
+      font-size: 1.2rem;
+  }
+
+  .filter-input {
+      width: 100%;
+      font-size: 1.2rem;
+
+      width: 10rem;
+      padding: 0.5rem;
+  }
+
+  .date-container {
+      width: 100%;
+      padding: 0.5rem;
+  }
+
+  .date-input {
+      width: 100%;
+      font-size: 1.2rem;
+      width: 10rem;
+      padding: 0.5rem;
+  }
+
+  .task-added-container {
+      margin: 0;
+  }
+
+  .modal-action {
+      width: 100%;
+  }
+
+  .form {
+      padding: 1.5rem;
+  }
+
+  .heading {
+      font-size: 1.5rem;
+  }
+
+  .form-element {
+      padding: 1.5rem;
+      gap: 1.5rem;
+  }
+
+  .form-elements-label {
+      font-size: 1.2rem;
+  }
+
+  .created-task-input {
+      width: 100%;
+      font-size: 1.2rem;
+  }
+
+  .task-submit-button,
+  .close-btn {
+      width: 100%;
+      font-size: 1.5rem;
+  }
+
+  .completed-task-button {
+      padding: 0.5rem;
+      gap: 1rem;
+  }
+
+  .all-task-btn,
+  .completed-task-btn {
+      width: 100%;
+      font-size: 1.5rem;
+  }
+
+  .Added-task-container {
+      padding: 0.5rem;
+      width: 100%;
+  }
+
+  .task-list-items {
+      padding: 1.5rem;
+      font-size: 1.5rem;
+  }
+
+  .task-list-items-details h3 {
+      font-size: 1.5rem;
+  }
+
+  .icons-container {
+    display: flex; 
+    margin-right: 5px;
+    width: 100%;
+     
+    justify-content: end;
+
+  }
+
+  .icon {
+      font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-container {
+      flex-direction: column;
+      margin: 0;
+  }
+
+  .task-container {
+      width: 100%;
+  }
+
+  .task-container-items {
+      width: 100%;
+  }
+
+  .task-container-logo-name {
+      font-size: 1.5rem;
+  }
+
+  .first-nav {
+      width: 93%;
+      padding: 0 1rem;
+  }
+
+  .filter-container {
+      padding: 0.5rem;
+      width: 100%;
+  }
+
+  .lbl-name {
+      font-size: 1.2rem;
+  }
+
+  .filter-input {
+      width: 100%;
+      font-size: 1.2rem;
+      width: 8rem;
+      padding: 0.5rem;
+  }
+
+  .date-container {
+      width: 100%;
+      padding: 0.5rem;
+  }
+
+  .date-input {
+      width: 100%;
+      font-size: 1.2rem;
+      width: 8rem;
+      padding: 0.5rem;
+  }
+
+  .task-added-container {
+      margin: 0;
+  }
+
+  .modal-action {
+      width: 100%;
+  }
+
+  .form {
+      padding: 1.5rem;
+  }
+
+  .heading {
+      font-size: 1.5rem;
+  }
+
+  .form-element {
+      padding: 1.5rem;
+      gap: 1.5rem;
+  }
+
+  .form-elements-label {
+      font-size: 1.2rem;
+  }
+
+  .created-task-input {
+      width: 100%;
+      font-size: 1.2rem;
+  }
+
+  .task-submit-button,
+  .close-btn {
+      width: 100%;
+      font-size: 1.5rem;
+  }
+
+  .completed-task-button {
+      padding: 0.5rem;
+      gap: 1rem;
+  }
+
+  .all-task-btn,
+  .completed-task-btn {
+      width: 100%;
+      font-size: 1.5rem;
+  }
+
+  .Added-task-container {
+      padding: 0.5rem;
+      width: 100%;
+  }
+
+  .task-list-items {
+      padding: 1.5rem;
+      font-size: 1.5rem;
+  }
+
+  .task-list-items-details h3 {
+      font-size: 1.5rem;
+  }
+
+  .icons-container {
+      width: 100%;
+      display: flex;
+      justify-content:end;
+  }
+
+  .icon {
+      font-size: 2.5rem;
+  }
+}
+
+
+
+
+@media screen and (max-width: 450px) {
+    .home-container {
+        flex-direction: column;
+        margin: 0;
+    }
+  
+    .task-container {
+        width: 100%;
+    }
+  
+    .task-container-items {
+        width: 100%;
+    }
+  
+    .task-container-logo-name {
+        font-size: 1.5rem;
+    }
+  
+    .first-nav {
+        width: 93%;
+        padding: 0 1rem;
+    }
+  
+    .filter-container {
+        padding: 0.5rem;
+        width: 100%;
+    }
+  
+    .lbl-name {
+        font-size: 1.2rem;
+    }
+  
+    .filter-input {
+        width: 100%;
+        font-size: 1.2rem;
+        width: 6rem;
+        padding: 0.5rem;
+    }
+  
+    .date-container {
+        width: 100%;
+        padding: 0.5rem;
+    }
+  
+    .date-input {
+        width: 100%;
+        font-size: 1.2rem;
+        width: 6rem;
+        padding: 0.5rem;
+    }
+  
+    .task-added-container {
+        margin: 0;
+    }
+  
+    .modal-action {
+        width: 100%;
+    }
+  
+    .form {
+        padding: 1.5rem;
+    }
+  
+    .heading {
+        font-size: 1.5rem;
+    }
+  
+    .form-element {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+  
+    .form-elements-label {
+        font-size: 1.2rem;
+    }
+  
+    .created-task-input {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+  
+    .task-submit-button,
+    .close-btn {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+  
+    .completed-task-button {
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+  
+    .all-task-btn,
+    .completed-task-btn {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+  
+    .Added-task-container {
+        padding: 0.5rem;
+        width: 100%;
+    }
+  
+    .task-list-items {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+    }
+  
+    .task-list-items-details h3 {
+        font-size: 1.5rem;
+    }
+  
+    .icons-container {
+        width: 100%;
+        display: flex;
+        justify-content:end;
+    }
+  
+    .icon {
+        font-size: 2.5rem;
+    }
+  }
+
+
+
+  
+
